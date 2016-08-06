@@ -488,7 +488,7 @@
 
     <array name="camera_mode_shutter_icon">
         <item>@drawable/ic_capture_camera</item>
-        <item>@drawable/ic_capture_video</item>
+        <item>@drawable/ic_capture_video2</item>
         <item>@drawable/ic_capture_refocus</item>
         <item>@null</item>
         <item>@drawable/ic_capture_panorama</item>

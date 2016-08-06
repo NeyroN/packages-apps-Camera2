@@ -220,10 +220,14 @@ public class CameraSettingsActivity extends FragmentActivity {
             PreferenceGroup resolutions =
                     (PreferenceGroup) findPreference(PREF_CATEGORY_RESOLUTION);
             if (mPictureSizesBack == null) {
-                recursiveDelete(resolutions,
-                        findPreference(Keys.KEY_PICTURE_SIZE_BACK));
-                recursiveDelete(resolutions,
-                        findPreference(Keys.KEY_VIDEO_QUALITY_BACK));
+                if (findPreference(Keys.KEY_PICTURE_SIZE_BACK) != null) {
+                    recursiveDelete(resolutions,
+                            findPreference(Keys.KEY_PICTURE_SIZE_BACK));
+                }
+                if (findPreference(Keys.KEY_VIDEO_QUALITY_BACK) != null) {
+                    recursiveDelete(resolutions,
+                            findPreference(Keys.KEY_VIDEO_QUALITY_BACK));
+                }
             }
             if (mPictureSizesFront == null) {
                 recursiveDelete(resolutions,

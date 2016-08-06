@@ -916,4 +916,9 @@ CHAR LIMIT=NONE] -->
     <string name="pref_boolean_false">0</string>
     <!-- String representation of boolean true, allows for integer conversion. -->
     <string name="pref_boolean_true">1</string>
+    <string name="warning">Warning</string>
+    <string name="low_battery_5">Low battery, need to close camera!</string>
+    <string name="low_battery_15">Low battery, need to close flash!</string>
+    <string name="low_battery_close">yes</string>
+
  </resources>

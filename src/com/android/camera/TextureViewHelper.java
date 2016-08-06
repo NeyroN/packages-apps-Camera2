@@ -311,6 +311,7 @@ public class TextureViewHelper implements TextureView.SurfaceTextureListener,
         int width = (int) textureArea.width() / downsample;
         int height = (int) textureArea.height() / downsample;
         Bitmap preview = mPreview.getBitmap(width, height);
+        if (preview == null) return null;
         return Bitmap.createBitmap(preview, 0, 0, width, height, mPreview.getTransform(null), true);
     }
 
